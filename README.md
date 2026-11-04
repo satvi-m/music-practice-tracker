@@ -8,13 +8,13 @@ As a pianist, I need to keep track of my practice habits, including when I pract
 • setting a goal for practice hours for a week
 • get words of motivation for practicing when encouragement is needed
 • making a to-do list to plan practice sessions
-• view practice history
 
 ## Tech Stack:
 • python3
 • Visual Studio Code
 • Github
-• JSON for storing files
+• JSON for storing practice sessions so they don't get lost after exiting program
 
 ## Future Plans:
-• Implement a way to track practice history and get practice statistics
+• tracking practice history, such as total hours practiced and average session durations
+• uploading audio recordings and using audio analysis to provide feedback to the musician
