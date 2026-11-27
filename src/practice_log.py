@@ -5,7 +5,7 @@ def log_practice_session():
     print("\n--- Log a Practice Session ---")
     
     # Prompting the user for practice session details
-    date = input("Enter the date of the practice session (YYYY-MM-DD): ")
+    date = input("Enter the date of the practice session (MM-DD-YYYY): ")
     duration = int(input("Enter the duration of the practice session (in minutes): "))
     practiced = input("Enter what you practiced during the session: ")
     notes = input("Enter what you'd like to work on by the next sessions: ")

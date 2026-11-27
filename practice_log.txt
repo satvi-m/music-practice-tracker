@@ -1,2 +1,4 @@
-Date: 2026-11-21, Duration: 45 minutes, Practiced: Hanon exercise, E major two octave scale, Etude 1, Notes: Fingering for E major scale
-Date: 2026-11-22, Duration: 65 minutes, Practiced: Etude 2 measures 4-10, Notes: Etude 2 measures 10-18
+Date: 11-21-2026, Duration: 45 minutes, Practiced: Hanon exercise, E major two octave scale, Etude 1, Notes: Fingering for E major scale
+Date: 11-22-2026, Duration: 65 minutes, Practiced: Etude 2 measures 4-10, Notes: Etude 2 measures 10-18
+Date: 11-27-2026, Duration: 35 minutes, Notes: 2 octave arpeggios, Practiced: 2 octave scales
+Date: 11/28/2026, Duration: 15 minutes, Notes: Augmented chords, Practiced: Diminished 7th chords
