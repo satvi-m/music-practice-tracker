@@ -20,16 +20,17 @@ menu = """
 What would you like to do?
 1. Log a practice session
 2. Set a weekly practice goal
-3. Get some motivation!
-4. Create a to-do list
-5. View your to-do list
-6. Exit the program
+3. View weekly practice progress
+4. Get some motivation!
+5. Create a to-do list
+6. View your to-do list
+7. Exit the program
 """
 print(menu)
-choice = input("Enter your choice (1-6): ")
+choice = input("Enter your choice (1-7): ")
 
 # handling the user's choice and calling the appropriate function from the corresponding module
-while choice != "6":
+while choice != "7":
     if choice == "1":
         from practice_log import log_practice_session   
         log_practice_session()
@@ -37,18 +38,21 @@ while choice != "6":
         from practice_goal import set_weekly_practice_goal
         set_weekly_practice_goal()
     elif choice == "3":
+        from practice_goal import view_weekly_practice_progress
+        view_weekly_practice_progress()
+    elif choice == "4":
         from motivation import get_motivation
         get_motivation()
-    elif choice == "4":
+    elif choice == "5":
         from todo_list import create_todo_list
         create_todo_list()    
-    elif choice == "5":
+    elif choice == "6":
         from todo_list import view_todo_list
         view_todo_list()
     else:
-        print("Invalid choice. Please enter a number between 1 and 6.")
+        print("Invalid choice. Please enter a number between 1 and 7.")
     print(menu)
-    choice = input("Enter your choice (1-6): ")
-    if choice == "6":
+    choice = input("Enter your choice (1-7): ")
+    if choice == "7":
         print("Thank you for using PracticePal! Goodbye!")
         exit()
