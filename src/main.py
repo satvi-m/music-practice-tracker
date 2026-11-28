@@ -1,6 +1,9 @@
 # FINAL PROJECT: src/main.py
 
 # displaying the title for the program
+import todo_list
+
+
 title = "PracticePal: Your Music Practice Tracker ˖ ݁♬⋆.˚𝄞"
 for i in range(len(title)):
     print("=", end="")
@@ -19,13 +22,14 @@ What would you like to do?
 2. Set a weekly practice goal
 3. Get some motivation!
 4. Create a to-do list
-5. Exit the program
+5. View your to-do list
+6. Exit the program
 """
 print(menu)
-choice = input("Enter your choice (1-5): ")
+choice = input("Enter your choice (1-6): ")
 
 # handling the user's choice and calling the appropriate function from the corresponding module
-while choice != "5":
+while choice != "6":
     if choice == "1":
         from practice_log import log_practice_session   
         log_practice_session()
@@ -38,10 +42,13 @@ while choice != "5":
     elif choice == "4":
         from todo_list import create_todo_list
         create_todo_list()    
-    elif choice != "1" and choice != "2" and choice != "3" and choice != "4":
-        print("Invalid choice. Please enter a number between 1 and 5.")
+    elif choice == "5":
+        from todo_list import view_todo_list
+        view_todo_list()
+    else:
+        print("Invalid choice. Please enter a number between 1 and 6.")
     print(menu)
-    choice = input("Enter your choice (1-5): ")
-if choice == "5":
-    print("Thank you for using PracticePal! Goodbye!")
-    exit()
+    choice = input("Enter your choice (1-6): ")
+    if choice == "6":
+        print("Thank you for using PracticePal! Goodbye!")
+        exit()
